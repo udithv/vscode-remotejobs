@@ -11,6 +11,7 @@
 	],
 	"activationEvents": [
 		"onCommand:remotejobs.helloWorld",
+		"onCommand:remotejobs.showJobs",
 		"onCommand:remotejobs.askQuestion"
 	],
 	"main": "./out/extension.js",
@@ -21,8 +22,13 @@
 				"title": "Hello World"
 			},
 			{
+				"command": "remotejobs.showJobs",
+				"category": "RemoteJobs",
+				"title": "Show remote jobs"
+			},
+			{
 				"command": "remotejobs.askQuestion",
-				"category": "VSRemoteJobs",
+				"category": "RemoteJobs",
 				"title": "Ask a Question"
 			}
 		]

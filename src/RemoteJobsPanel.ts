@@ -170,7 +170,9 @@ export class RemoteJobsPanel {
         <h1>Remote Jobs </h1> <span>Powered by wannahireme.com</span>
         
 
-        <ul id="jobs"></ul>
+        <ul id="jobs">
+          <h2>Loading </h2>
+        </ul>
 
         <script nonce="${nonce}" src="${scriptUri}"></script>
 	    </body>

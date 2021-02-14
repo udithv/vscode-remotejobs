@@ -4,11 +4,15 @@
     const vscode = acquireVsCodeApi();
     const jobs = document.getElementById("jobs");
 
+    jobs.innerHTML = "";
 
+    console.log("Remote Jobs");
     fetch("https://careervault.io/json/remote")
         .then(response => response.json())
         .then((result) => {
+            console.log(result);
             result['data'].forEach(j => {
+
                 let job = document.createElement('li');
                 let jobTitle = document.createElement('h2');
                 let companyName = document.createElement('h5');

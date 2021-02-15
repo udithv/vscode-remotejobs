@@ -2,37 +2,43 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { RemoteJobsPanel } from './RemoteJobsPanel';
+import { SidebarProvider } from './SideBarProvider';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "remotejobs" is now active!');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('remotejobs.showJobs', () => {
-		// The code you place here will be executed every time your command is executed
-		RemoteJobsPanel.createOrShow(context.extensionUri);
-	});
-
-	context.subscriptions.push(disposable);
-
+	const sidebarProvider = new SidebarProvider(context.extensionUri);
 	context.subscriptions.push(
-		vscode.commands.registerCommand('remotejobs.askQuestion', async () => {
-			const answer =  await vscode.window.showInformationMessage("How was your day ? ", "good", "bad");
-
-			if(answer == "bad") {
-				vscode.window.showInformationMessage("Sorry to hear that");
-			}else {
-				console.log({ answer });
-			}
-		})
+		vscode.window.registerWebviewViewProvider(
+		"remotejobs-sidebar",
+		sidebarProvider
+		)
 	);
 
+	// context.subscriptions.push(
+	// 	vscode.commands.registerCommand("remotejobs.reloadSidebar", async () => {
+	// 	  await vscode.commands.executeCommand("workbench.action.closeSidebar");
+	// 	  await vscode.commands.executeCommand(
+	// 		"workbench.view.extension.remotejobs-sidebar-view"
+	// 	  );
+	// 	  setTimeout(() => {
+	// 		vscode.commands.executeCommand(
+	// 		  "workbench.action.webview.openDeveloperTools"
+	// 		);
+	// 	  }, 500);
+		  // SwiperPanel.kill();
+		  // SwiperPanel.createOrShow(context.extensionUri);
+		  // if (sidebarProvider._view) {
+		  //   sidebarProvider.resolveWebviewView(sidebarProvider._view);
+		  // }
+	// 	})
+	//   );
+
+	context.subscriptions.push(vscode.commands.registerCommand('remotejobs.showJobs', () => {
+		// The code you place here will be executed every time your command is executed
+		RemoteJobsPanel.createOrShow(context.extensionUri);
+	}));
 
 }
 

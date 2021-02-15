@@ -18,7 +18,7 @@
                 let companyName = document.createElement('h5');
                 let location = document.createElement('p');
                 let jobLink = document.createElement('a');
-                
+                let saveButton = document.createElement('button');
                 
                 companyName.innerHTML = j["CompanyName"];
                 job.append(companyName);
@@ -31,6 +31,14 @@
                 location.innerHTML = j["Location"];
                 job.append(location);
                 job.className = "job";
+
+                saveButton.textContent = "Bookmark Job";
+                saveButton.onclick = function(e) {
+                    console.log(j);
+                };
+                job.append(saveButton);
+
+
 
                 jobs.append(job);
             });

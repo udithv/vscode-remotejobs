@@ -6,11 +6,11 @@
 
     jobs.innerHTML = "";
 
-    console.log("Remote Jobs");
+    console.log(" Fetching Remote Jobs");
     fetch("https://careervault.io/json/remote")
         .then(response => response.json())
         .then((result) => {
-            console.log(result);
+            // console.log(result);
             result['data'].forEach(j => {
 
                 let job = document.createElement('li');
@@ -34,6 +34,8 @@
 
                 jobs.append(job);
             });
+
+            console.log("Completed");
         })
         .catch(console.log);
 }());

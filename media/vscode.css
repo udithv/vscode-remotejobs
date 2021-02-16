@@ -90,6 +90,16 @@ textarea::placeholder {
 	color: var(--vscode-input-placeholderForeground);
 }
 
+.logo {
+	text-decoration: none;
+	color: rgb(249, 168, 38);
+	font-family: Pacifico, cursive;
+}
+
+.logo:hover {
+	color: rgb(249, 168, 38);
+}
+
 #jobs {
 	margin: 20px auto;
 	width: 40%;

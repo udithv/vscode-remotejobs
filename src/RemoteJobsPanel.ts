@@ -167,12 +167,15 @@ export class RemoteJobsPanel {
         </script>
 			</head>
       <body>
-        <h1>Remote Jobs </h1> <span>Powered by wannahireme.com</span>
+        <h1>Remote Jobs </h1> 
+        <p>Powered by <a href="https://wannahireme.com" class="logo">wannahireme.com</a></p>
         
 
         <ul id="jobs">
           <h2>Loading </h2>
         </ul>
+
+        <button id="more-jobs">More Jobs</button>
 
         <script nonce="${nonce}" src="${scriptUri}"></script>
 	    </body>

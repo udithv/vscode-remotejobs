@@ -37,6 +37,11 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
           break;
         }
 
+        case "showJobs": {
+          vscode.commands.executeCommand("remotejobs.showJobs");
+          break;
+        }
+
       }
     });
   }
@@ -73,7 +78,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 					Use a content security policy to only allow loading images from https or from our extension directory,
 					and only allow scripts that have a specific nonce.
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src  img-src https: data:; style-src 'unsafe-inline' ${
+        <meta http-equiv="Content-Security-Policy" content="default-src; font-src img-src https: data:; style-src 'unsafe-inline' ${
       webview.cspSource
     }; script-src 'nonce-${nonce}';">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">

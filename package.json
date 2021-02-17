@@ -40,7 +40,8 @@
       {
         "command": "remotejobs.showJobs",
         "category": "RemoteJobs",
-        "title": "Show remote jobs"
+        "title": "Show remote jobs",
+        "icon": "media/briefcase.svg"
       },
       {
         "command": "remotejobs.reloadSidebar",

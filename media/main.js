@@ -19,6 +19,7 @@
                 let location = document.createElement('p');
                 let jobLink = document.createElement('a');
                 let saveButton = document.createElement('button');
+                let bookmarked = false;
                 
                 companyName.innerHTML = j["CompanyName"];
                 job.append(companyName);
@@ -32,9 +33,33 @@
                 job.append(location);
                 job.className = "job";
 
-                saveButton.textContent = "Bookmark Job";
+
+                saveButton.textContent = bookmarked ? "Remove Bookmark" : "Bookmark Job";
                 saveButton.onclick = function(e) {
                     console.log(j);
+
+                    if(!bookmarked) {
+
+
+                        saveButton.textContent = "Remove Bookmark";
+                        bookmarked = true;
+                        vscode.postMessage({
+                            type: "onInfo",
+                            value: "Job Bookmarked"
+                        });
+
+                        
+                    }else {
+
+
+                        saveButton.textContent = "Bookmark Job";
+                        bookmarked = false;
+                        vscode.postMessage({
+                            type: "onInfo",
+                            value: "BookMark Removed"
+                        });
+
+                    }
                 };
                 job.append(saveButton);
 

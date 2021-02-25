@@ -172,7 +172,7 @@ export class RemoteJobsPanel {
         
 
         <ul id="jobs">
-          <h2>Loading ...</h2>
+          <h2 style="text-align:center;" >Loading ...</h2>
         </ul>
 
         <!-- <button id="more-jobs">More Jobs</button> -->

@@ -120,3 +120,28 @@ textarea::placeholder {
 .job:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+
+.btn-link {
+	display: block;
+	text-decoration: none;
+	border: none;
+	padding: var(--input-padding-vertical) var(--input-padding-horizontal);
+	width: 100%;
+	text-align: center;
+	outline: 1px solid transparent;
+	outline-offset: 2px !important;
+	color: var(--vscode-button-foreground);
+	background: var(--vscode-button-background);
+}
+
+.btn-link:hover {
+	cursor: pointer;
+	background: var(--vscode-button-hoverBackground);
+	color: var(--vscode-button-foreground);
+}
+
+.btn-link:focus {
+	outline-color: var(--vscode-focusBorder);
+	color: var(--vscode-button-foreground);
+}

@@ -100,8 +100,9 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
         <button id="show-all-btn">Show All Jobs</button>
 
         <div class="lower-dock">
-          <button id="feature-request">Feature Request</button>
-          <button id="feedback">Feedback</button>
+          <a class="btn-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdvi42q1IlFtdVJB1x6jSlCOYpVI-TY8LdYIz-bq2fDcDeGjQ/viewform?usp=sf_link">Feature Request</a>
+          <a class="btn-link" href="https://docs.google.com/forms/d/e/1FAIpQLScnYzXwmbpAeLQWjqm7oBXjwgjZTO_dHebTGnt9uA6K4e17Fw/viewform?usp=sf_link">Feedback</a>
+          <a class="btn-link" href="https://docs.google.com/forms/d/e/1FAIpQLSffp3vklbDuQSRSTLkH_c7VrNe4Yt9fpNyGCG6ecMTI0-S0wA/viewform?usp=sf_link">Post a job</a>
         </div>
 				<script nonce="${nonce}" src="${scriptUri}"></script>
 			</body>

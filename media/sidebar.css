@@ -1,10 +1,10 @@
-button:not(:last-child) {
+button:not(:last-child), a {
     margin-bottom: 20px;
-    padding: 8px 32px;
+    padding: 12px 32px;
 }
 
-button {
-    font-size: 14px;
+button, a {
+    font-size: 18px;
 }
 
 .wannahireme_logo {

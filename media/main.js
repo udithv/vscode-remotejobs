@@ -4,13 +4,16 @@
     const vscode = acquireVsCodeApi();
     const jobs = document.getElementById("jobs");
 
-    jobs.innerHTML = "";
+    
 
     console.log(" Fetching Remote Jobs");
     fetch("https:/wannahireme.com/api/alljobs")
         .then(response => response.json())
         .then((result) => {
             // console.log(result);
+
+            jobs.innerHTML = "";
+            
             result.forEach(j => {
 
                 let job = document.createElement('li');

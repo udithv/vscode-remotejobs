@@ -5,7 +5,7 @@
 View top remote jobs curated from multiple resources in vscode. Powered by [wannahireme.com](https://wannahireme.com/jobs)
 
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/tonybaloney.vscode-pets?color=blue&logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets&WT.mc_id=python-17801-anthonyshaw)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/tonybaloney.vscode-pets?color=blue&logo=visual-studio)]( https://marketplace.visualstudio.com/items?itemName=contemporaryape.remotejobs)
 
 View latest remote jobs in programming, development, testing and engineering curate from top resources in vscode. Updated everyday.
 
@@ -19,7 +19,7 @@ Click ![icon](./media/briefcase.png) to launch sidebar
 
 ## Installation
 
-Get from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets&WT.mc_id=python-17801-anthonyshaw)
+Get from the [VS Code marketplace]( https://marketplace.visualstudio.com/items?itemName=contemporaryape.remotejobs)
 
 ## Features
 
@@ -31,8 +31,9 @@ Run the "Start remote jobs" command (`remotejobs.showJobs`)
 
 ## Launch the sidebar
 
-Click ![icon](./media/briefcase.png)
+Click ![icon](./media/briefcase.png) to launch sidebar 
 
+![screenshot](./media/showjobs_action.gif)
 
 ## Release Notes
 

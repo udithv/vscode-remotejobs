@@ -1,6 +1,7 @@
 {
   "name": "remotejobs",
   "displayName": "remotejobs",
+  "publisher": "contemporaryape",
   "description": "A curated list of all the current remote jobs from various job boards",
   "version": "0.0.1",
   "engines": {

@@ -11,6 +11,10 @@ View latest remote jobs in programming, development, testing and engineering cur
 
 Run "Show remote jobs" action to see the panel.
 
+or 
+
+Click ![icon](./media/briefcase.png)
+
 ![screenshot](./media/showjobs_action.gif)
 
 ## Installation
@@ -22,7 +26,9 @@ Get from the [VS Code marketplace](https://marketplace.visualstudio.com/items?it
 ## Showing remote jobs
 
 Run the "Start remote jobs" command (`remotejobs.showJobs`) 
+
 or 
+
 Click ![icon](./media/briefcase.png)
 
 ![screenshot](./media/showjobs_action.gif)

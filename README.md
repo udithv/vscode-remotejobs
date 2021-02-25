@@ -13,7 +13,7 @@ Run "Show remote jobs" action to see the panel.
 
 or 
 
-Click ![icon](./media/briefcase.png)
+Click ![icon](./media/briefcase.png) to launch sidebar 
 
 ![screenshot](./media/showjobs_action.gif)
 
@@ -27,11 +27,12 @@ Get from the [VS Code marketplace](https://marketplace.visualstudio.com/items?it
 
 Run the "Start remote jobs" command (`remotejobs.showJobs`) 
 
-or 
+![screenshot](./media/showjobs_action.gif)
+
+## Launch the sidebar
 
 Click ![icon](./media/briefcase.png)
 
-![screenshot](./media/showjobs_action.gif)
 
 ## Release Notes
 

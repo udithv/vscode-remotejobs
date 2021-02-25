@@ -43,3 +43,7 @@ Users can only view remote jobs as of now.
 
 Initial release of remote jobs.
 
+### 0.0.2
+
+Added absolute urls and icon image.
+

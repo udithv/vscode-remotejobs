@@ -29,7 +29,7 @@ Run the "Start remote jobs" command (`remotejobs.showJobs`)
 
 Users can only view remote jobs as of now.
 
-### 1.0.0
+### 0.0.1
 
 Initial release of remote jobs.
 

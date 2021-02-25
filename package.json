@@ -6,6 +6,7 @@
   "engines": {
     "vscode": "^1.53.0"
   },
+  "repository": {"type": "github", "url": "https://github.com/udithv/vscode-remotejobs"},
   "categories": [
     "Other"
   ],

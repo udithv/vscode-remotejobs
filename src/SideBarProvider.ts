@@ -65,6 +65,11 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
     const styleMainUri = webview.asWebviewUri(
       vscode.Uri.joinPath(this._extensionUri, "media", "sidebar.css")
     );
+
+    const logoImageUri = webview.asWebviewUri(
+      vscode.Uri.joinPath(this._extensionUri, "media/images", "logo.png")
+    );
+    
     
 
     // Use a nonce to only allow a specific script to be run.
@@ -78,7 +83,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 					Use a content security policy to only allow loading images from https or from our extension directory,
 					and only allow scripts that have a specific nonce.
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src; font-src img-src https: data:; style-src 'unsafe-inline' ${
+        <meta http-equiv="Content-Security-Policy" content="font-src ${webview.cspSource}; img-src https: data: ${webview.cspSource}; style-src 'unsafe-inline' ${
       webview.cspSource
     }; script-src 'nonce-${nonce}';">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,11 +93,16 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
         
 			</head>
       <body>
-
-        <button id="login-btn">Login</button>
+        <img src="${logoImageUri}" alt="wannahireme_logo" class="wannahireme_logo" />
+        <!-- <button id="login-btn">Login</button>
         <button id="logout-btn">Logout</button>
-        <button id="show-saved-btn">Show Saved Jobs</button>
+        <button id="show-saved-btn">Show Saved Jobs</button> -->
         <button id="show-all-btn">Show All Jobs</button>
+
+        <div class="lower-dock">
+          <button id="feature-request">Feature Request</button>
+          <button id="feedback">Feedback</button>
+        </div>
 				<script nonce="${nonce}" src="${scriptUri}"></script>
 			</body>
 			</html>`;

@@ -157,7 +157,7 @@ export class RemoteJobsPanel {
 					Use a content security policy to only allow loading images from https or from our extension directory,
 					and only allow scripts that have a specific nonce.
         -->
-        <meta http-equiv="Content-Security-Policy" content="img-src https: data:; style-src 'unsafe-inline' ${
+        <meta http-equiv="Content-Security-Policy" content="img-src https: data: ${webview.cspSource}; style-src 'unsafe-inline' ${
       webview.cspSource
     }; script-src 'nonce-${nonce}';">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -167,15 +167,15 @@ export class RemoteJobsPanel {
         </script>
 			</head>
       <body>
-        <h1>Remote Jobs </h1> 
-        <p>Powered by <a href="https://wannahireme.com" class="logo">wannahireme.com</a></p>
+        <h1 style="text-align:center;margin: 12px 0 0 0;">Remote Jobs</h1> 
+        <p  style="text-align:center;margin: 0 0 12px 0;">Powered by <a href="https://wannahireme.com/jobs" class="logo">wannahireme.com</a></p>
         
 
         <ul id="jobs">
-          <h2>Loading </h2>
+          <h2>Loading ...</h2>
         </ul>
 
-        <button id="more-jobs">More Jobs</button>
+        <!-- <button id="more-jobs">More Jobs</button> -->
 
         <script nonce="${nonce}" src="${scriptUri}"></script>
 	    </body>

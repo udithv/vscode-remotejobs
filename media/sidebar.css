@@ -1,5 +1,17 @@
 button:not(:last-child) {
     margin-bottom: 20px;
     padding: 8px 32px;
-    font-size: 12px;
+}
+
+button {
+    font-size: 14px;
+}
+
+.wannahireme_logo {
+    display: block;
+    margin: 12px auto;
+}
+
+.lower-dock {
+    margin-top: auto;
 }

@@ -11,6 +11,8 @@
   "categories": [
     "Other"
   ],
+  "keywords": ["remotejobs", "jobs", "job board"],
+  "icon": "media/images/logo.png",
   "activationEvents": [
     "onCommand:remotejobs.showJobs",
     "onCommand:remotejobs.reloadSidebar",

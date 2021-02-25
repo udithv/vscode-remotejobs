@@ -1,6 +1,6 @@
 # remotejobs README
 
-![icon](./media/images/logo.png)
+![icon](https://github.com/udithv/vscode-remotejobs/raw/master/media/images/logo.png)
 
 View top remote jobs curated from multiple resources in vscode. Powered by [wannahireme.com](https://wannahireme.com/jobs)
 
@@ -13,9 +13,9 @@ Run "Show remote jobs" action to see the panel.
 
 or 
 
-Click ![icon](./media/briefcase.png) to launch sidebar 
+Click ![icon](https://github.com/udithv/vscode-remotejobs/raw/master/media/briefcase.png) to launch sidebar 
 
-![screenshot](./media/showjobs_action.gif)
+![screenshot](https://github.com/udithv/vscode-remotejobs/raw/master/media/showjobs_action.gif)
 
 ## Installation
 
@@ -27,13 +27,13 @@ Get from the [VS Code marketplace]( https://marketplace.visualstudio.com/items?i
 
 Run the "Start remote jobs" command (`remotejobs.showJobs`) 
 
-![screenshot](./media/showjobs_action.gif)
+![screenshot](https://github.com/udithv/vscode-remotejobs/raw/master/media/showjobs_action.gif)
 
 ## Launch the sidebar
 
-Click ![icon](./media/briefcase.png) to launch sidebar 
+Click ![icon](https://github.com/udithv/vscode-remotejobs/raw/master/media/briefcase.png) to launch sidebar 
 
-![screenshot](./media/showjobs_action.gif)
+![screenshot](https://github.com/udithv/vscode-remotejobs/raw/master/media/showjobs_action.gif)
 
 ## Release Notes
 

@@ -19,7 +19,7 @@ Click ![icon](media/briefcase.png) to launch sidebar
 
 ## Installation
 
-Get from the [VS Code marketplace]( https://marketplace.visualstudio.com/items?itemName=contemporaryape.remotejobs)
+Get from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=contemporaryape.remotejobs)
 
 ## Features
 
@@ -46,4 +46,8 @@ Initial release of remote jobs.
 ### 0.0.2
 
 Added absolute urls and icon image.
+
+### 0.0.3
+
+Updated image shields.
 
